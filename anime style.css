@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 body{
     width: 100%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Google Sans,-apple-system,BlinkMacSystemFont,sans-serif;
 }
 
 img{
@@ -29,28 +30,30 @@ img{
     padding: 2%;
 }
 
-.viewAll{
-    margin-left: 75%;
-}
 .card-body{
-padding-top: 0;
 background-color: white;
 padding: 2%;
+padding: 0;
 align-items: center;
 border-radius: 4px;
 }
 .card i{
-    color: greenyellow;
-    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    color: #ee5253;
 }
 
 .card-header{
     padding: 5px 0;
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 0;
+    padding: 25px 3% 0 3%;
+    border: none;
 }
 .card-header p{
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+.card-header a{
+    padding-left: 55%;
 }
 .card-section{
     align-items: center;
@@ -92,7 +95,7 @@ p{
 }
 
 .tophead a{
-    font-family:sans-serif;
+    font-family: Google Sans,-apple-system,BlinkMacSystemFont,sans-serif;
 }
 
 .navigation a{
@@ -123,7 +126,9 @@ p{
     max-width: 100%;
 }
 
-
+.card img:hover{
+    opacity: 0.9;
+}
 
 
 
@@ -144,5 +149,11 @@ p{
     }
     .card-section{
         padding: 15px 0 0 25px;
+    }
+}
+@media only screen and (max-width: 500px){
+
+    .navbar-brand{
+        margin-left: 30%;
     }
 }
